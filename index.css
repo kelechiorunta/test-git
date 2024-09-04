@@ -1,0 +1,43 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    /* background: radial-gradient(rgba(red, white, red, 0.5), rgba(red, blue, red, 0.1)); */
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100%;
+    padding: 1vh;
+    width:100%;
+    margin:auto;
+  }
+  
+  .loader {
+    margin: 50% auto;
+
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid crimson;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 1s linear infinite;
+    padding: 1vh;
+    background-color: crimson;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
